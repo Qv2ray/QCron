@@ -67,7 +67,7 @@ jobs:
         run: |
           mkdir build
           cd build
-          cmake .. -DCMAKE_BUILD_TYPE=Release -A x64 -DQVPLUGIN_USE_QT6=ON
+          cmake .. -DCMAKE_BUILD_TYPE=Release -A x64 -DQCRON_USE_QT6=ON
           cmake --build . --parallel $(nproc) --config Release
 # --------------------------------------------------------
       - name: macOS - ${{ matrix.qt_version }} - Generate Dependencies and Build
@@ -76,7 +76,7 @@ jobs:
         run: |
           mkdir build
           cd build
-          cmake .. -DCMAKE_BUILD_TYPE=Release -DQVPLUGIN_USE_QT6=ON
+          cmake .. -DCMAKE_BUILD_TYPE=Release -DQCRON_USE_QT6=ON
           cmake --build . --parallel $(sysctl -n hw.logicalcpu)
 # --------------------------------------------------------
       - name: Linux - ${{ matrix.qt_version }} - Generate Dependencies and Build
@@ -89,5 +89,5 @@ jobs:
         run: |
           mkdir build
           cd build
-          cmake .. -DCMAKE_BUILD_TYPE=Release -DQVPLUGIN_USE_QT6=ON
+          cmake .. -DCMAKE_BUILD_TYPE=Release -DQCRON_USE_QT6=ON
           cmake --build . --parallel $(nproc)
