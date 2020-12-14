@@ -1,0 +1,6 @@
+[submodule "libs/QJsonStruct"]
+	path = libs/QJsonStruct
+	url = https://github.com/Qv2ray/QJsonStruct
+[submodule "libs/libcron"]
+	path = libs/libcron
+	url = https://github.com/PerMalmberg/libcron
