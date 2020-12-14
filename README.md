@@ -1,2 +1,2 @@
-# QCrond
-Crontab Daemon in Qt
+# QCron
+Software Cron Daemon in Qt
